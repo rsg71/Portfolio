@@ -1,16 +1,15 @@
 footer {
     width:100%;
     position:relative;
-    clear:both;
-    height:150px;
+    clear:all;
+    height:10%;
     background-color:rgb(177, 170, 170);
-    margin-bottom:0px;
    
 }
 
 
 .footer-content ul {
-    display:flex;
+    display: flex;
     justify-content:center;
     
     
@@ -30,4 +29,18 @@ footer li {
     margin-left:-10px;
     margin-right:10px;
     
+}
+
+.card-1 {
+    height:358.656px;
+}
+
+
+.headshot {
+    width:500px;
+    margin-top:50px;
+}
+
+.bio {
+    margin-bottom:3vh;
 }

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="shortcut icon" type="image/jpg" href="favicon.jpg" />
 
 </head>
 
@@ -78,7 +78,7 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><a><img class ="logo" src="favicon.png"></a>
+        <a class="navbar-brand" href="index.html"><a><img class ="logo" src="favicon.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -87,7 +87,7 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home/About<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -104,45 +104,49 @@
     <!-- End Nav bar -->
 
     <div class="container">
+
+        <br>
+        <br>
+        <h1>Contact</h1>
         <form>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
+                <label for="exampleFormControlInput1">Name:</label>
+                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address:</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
+
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Example select</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect2">Example multiple select</label>
-                <select multiple class="form-control" id="exampleFormControlSelect2">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="exampleFormControlTextarea1">Inquiry/Questions/Comments:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
             </div>
         </form>
+        <input class="btn btn-dark" type="submit" value="Submit">
     </div>
 
 
 
-    <footer>
+    <footer class="footer-1 fixed-bottom">
+        <div class="container">
+            <div class="footer-content">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/robert.greenawalt29/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/robert-greenawalt-43457a14a/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/_broccoli_rob_" target="_blank" ><i class="fab fa-twitter"></i>
+                    </li>
 
-
-
-
+                </ul>
+            </div>
+        </div>
     </footer>
 
 
