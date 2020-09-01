@@ -1,0 +1,33 @@
+footer {
+    width:100%;
+    position:relative;
+    clear:both;
+    height:150px;
+    background-color:rgb(177, 170, 170);
+    margin-bottom:0px;
+   
+}
+
+
+.footer-content ul {
+    display:flex;
+    justify-content:center;
+    
+    
+}
+
+footer li {
+    list-style-type:none;
+    padding:20px;
+}
+
+.fab {
+    color:white;
+}
+
+.logo {
+    width:32px;
+    margin-left:-10px;
+    margin-right:10px;
+    
+}
