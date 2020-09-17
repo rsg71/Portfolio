@@ -39,13 +39,16 @@
       right:0;
   }
 
-  .contact,.home {
+  /* .contact,.home {
       height:95vh;
-  }
+  } */
 
   .portfolio {
       margin-bottom:3vh;
   }
+
+
+  
 /* .footer-portfolio {
     clear:both;
     margin-top:10%;
@@ -72,15 +75,13 @@
 
 
 .headshot {
-    width:500px;
+    width:40vw;
     margin-top:50px;
     border:solid gray 2px;
     
 }
 
-/* .bio {
-    /* margin-bottom: 7%; */
-/* */ 
+
 
 .footer-links{
     display:flex;
