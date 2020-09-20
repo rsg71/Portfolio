@@ -1,29 +1,3 @@
-
-/* Footer formatting */
-/* html {
-    position: relative;
-    min-height: 100%;
-  }
-  body {
-    margin-bottom: 60px; /* Margin bottom by footer height */
-    /* background-image: url("white-abstract1.jpg"); */
-    /* background-size:100%; */
-    /* min-width: 480px; */
-    /* position:relative; */
-
-/*     
-  }
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align:center;
-    height: 150px; /* Set the fixed height of the footer here */
-    /* line-height: 140px; Vertically center the text there */
-    /* background-color: black;; */
-    /* min-width: 480px; */
-  
-
   body {
       position: relative;
       
@@ -31,6 +5,7 @@
   }
   .footer {
       position:absolute;
+      clear:both;
       bottom:0;
       width:100vw;
       height:15vh;
@@ -59,7 +34,7 @@
 
 .fab {
     color:black;
-    font-size:30px;
+    font-size:2vw;
     padding:10px;
 }
 
@@ -74,12 +49,12 @@
 }
 
 
-.headshot {
+/* .headshot {
     width:40vw;
     margin-top:50px;
     border:solid gray 2px;
     
-}
+} */
 
 
 
@@ -88,4 +63,9 @@
     justify-content:center;
     align-items:center;
     padding-top:5vh;
+}
+
+
+.card-img-top:hover {
+    opacity: 0.6;
 }
