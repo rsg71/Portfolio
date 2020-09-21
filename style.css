@@ -1,6 +1,6 @@
   body {
       position: relative;
-      
+    background-image:url(imgs/)      
 
   }
   .footer {
@@ -14,22 +14,11 @@
       right:0;
   }
 
-  /* .contact,.home {
-      height:95vh;
-  } */
+
 
   .portfolio {
       margin-bottom:3vh;
   }
-
-
-  
-/* .footer-portfolio {
-    clear:both;
-    margin-top:10%;
-} */
-
-/* footer end */
 
 
 .fab {
@@ -39,23 +28,10 @@
 }
 
 .logo {
-    width:32px;
+    width:3rem;
     margin-left:10px;
     
 }
-
-.card-1 {
-    height:358.656px;
-}
-
-
-/* .headshot {
-    width:40vw;
-    margin-top:50px;
-    border:solid gray 2px;
-    
-} */
-
 
 
 .footer-links{
@@ -69,3 +45,30 @@
 .card-img-top:hover {
     opacity: 0.6;
 }
+
+#contact-submit-link {
+    text-decoration:none;
+    color:white;
+}
+
+#headshot {
+    display:block;
+    max-width: 100%;
+    height:auto;
+}
+
+#bio {
+    margin-left:14px;
+    margin-right:10px;
+    padding-left:20px;
+    padding-right:20px;
+    
+}
+
+
+#github {
+    display:flex;
+    justify-content: center;
+}
+
+
