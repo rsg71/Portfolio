@@ -1,8 +1,9 @@
   body {
       position: relative;
       width:100vw;
-
   }
+
+
   .footer {
       display:flex;
       justify-content: center;
