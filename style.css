@@ -89,3 +89,17 @@
 .footer-contact {
     bottom:-247px;
 }
+
+
+
+#resume {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border:2px solid black;
+    /* max-width:100vw;
+    max-height:140vh; */
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
