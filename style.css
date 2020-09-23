@@ -16,9 +16,10 @@
       
   }
 
-  .footer-links{
-      color:red;
+  .footer-links a{
+      text-decoration:none;
   }
+ 
 
 
   .portfolio {
