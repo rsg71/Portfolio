@@ -16,6 +16,10 @@
       
   }
 
+  .footer-links{
+      color:red;
+  }
+
 
   .portfolio {
       margin-bottom:3vh;
@@ -100,8 +104,3 @@
 #portfolio-btn-link, #resume-btn-link {
     border-radius:30px;
 }
-
-
-
-
-
