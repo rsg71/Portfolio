@@ -34,14 +34,6 @@
 
 .logo {
     width:3rem;
-    
-}
-
-
-.footer-links{
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
 
 
@@ -55,7 +47,7 @@
 }
 
 #headshot {
-    max-width: 100%;
+    max-width: 90%;
     border:3px solid black;
     border-radius:4px;
     margin-top:30px;
@@ -106,19 +98,10 @@
 
 
 #portfolio-btn-link, #resume-btn-link {
-        text-decoration: none;
-        color:black;
-}
-
-#portfolio-Btn, #resume-Btn {
     border-radius:30px;
 }
 
-#portfolio-Btn a:hover {
-    color:white;
-}
-#resume-Btn a:hover {
-    color:white;
-}
+
+
 
 
