@@ -10,10 +10,9 @@
       align-items: center;
       position:absolute;
       clear:all;
-      width:100vw;
       height:15vh;
       background-color:rgb(20, 20, 20);
-      
+      width:100vw;
   }
 
   .footer-links a{
@@ -52,7 +51,7 @@
 }
 
 #headshot {
-    max-width: 90%;
+    max-width: 30%;
     border:3px solid black;
     border-radius:4px;
     margin-top:30px;
@@ -70,11 +69,6 @@
     display:flex;
     justify-content: center;
 }
-
-.card-image-top {
-    height:358.656px;
-}
-
 
 .portfolio-body {
     margin-top: 7vh;
