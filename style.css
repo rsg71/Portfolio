@@ -1,6 +1,7 @@
   body {
       position: relative;
       width:100vw;
+      background-color: whitesmoke;
   }
 
 
@@ -51,10 +52,14 @@
 }
 
 #headshot {
-    max-width: 30%;
+    max-width: 500px;
+    min-width:30%;
     border:3px solid black;
     border-radius:4px;
     margin-top:30px;
+}
+.headshot-block {
+    background-color: whit;
 }
 
 #bio {

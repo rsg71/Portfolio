@@ -2,241 +2,225 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
 
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 
-      <!-- font awesome link for icons -->
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <!-- font awesome link for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
 
-    <!-- Css link for footer-->
-    <link rel="stylesheet" href="style.css">
+  <!-- Css link for footer-->
+  <link rel="stylesheet" href="style.css">
 
-    <!-- favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="imgs/favicon.png" />
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/jpg" href="imgs/favicon.png" />
 
-    <title>Portfolio | Robert Greenawalt</title>
+  <title>Portfolio | Robert Greenawalt</title>
 
 </head>
 
 <body>
 
-    <!-- Nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img class="logo" src="imgs/favicon.png" alt="my Robert-logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- Nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img class="logo" src="imgs/favicon.png" alt="my Robert-logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home/About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home/About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- End Nav bar ------------------------------------------------------------------------------->
+
+
+  <main class="container portfolio">
+    <section class="row row-cols-1 row-cols-md-2 portfolio-body">
+
+
+      <section class="col mb-4">
+        <figure class="card">
+          <a href="https://findtherestaurant500.herokuapp.com/" target="_blank"><img src="imgs/restaurant_finder.PNG"
+              class="card-img-top" alt="note taker image" height="358"></a>
+          <figure class="card-body">
+            <h5 class="card-title">Restaraunt Finder</h5>
+            <p class="card-text">Search by category and city to return a list of restaurants which are plotted on the Google map; users may also save favorite restaurants.</p>
+            <ul class="list-group">
+              <li class="list-group-item">Technologies Used: Javascript, Node.js</li>
+              <li class="list-group-item"><a href="https://github.com/rsg71/Restaurant_Finder" target="_blank"
+                  class="card-link">Github Repo</a></li>
             </ul>
-        </div>
-    </nav>
+          </figure>
+        </figure>
+      </section>
 
-    <!-- End Nav bar ------------------------------------------------------------------------------->
-    
+      <section class="col mb-4">
+        <figure class="card">
+          <a href="https://rsg71.github.io/Password-Generator-Robert-Greenawalt/" target="_blank"><img
+              src="imgs/Password-generator.PNG" class="card-img-top" alt="password generator" height="358"></a>
+          <figure class="card-body shado" id="pass-gen-card-body">
+            <h5 class="card-title">Password Generator</h5>
+            <p class="card-text"> A simple password generator that inputs character length and character type and
+              returns a randomly generated password to the user</p>
+            <ul class="list-group">
+              <li class="list-group-item">Technologies Used: HTML, CSS, Javascript</li>
+              <li class="list-group-item"><a href="https://github.com/rsg71/Password-Generator-Robert-Greenawalt"
+                  target="_blank" class="card-link">Github Repo</a></li>
+            </ul>
+          </figure>
+        </figure>
+      </section>
 
-    <main class="container portfolio">
-        <section class="row row-cols-1 row-cols-md-2 portfolio-body">
-            
-            <section class="col mb-4">
-                <figure class="card">
-                    <a href="https://rsg71.github.io/Password-Generator-Robert-Greenawalt/" target="_blank"><img
-                            src="imgs/Password-generator.PNG"
-                            class="card-img-top" alt="coming soon image" height="358"></a>
-                    <figure class="card-body" id="pass-gen-card-body">
-                        <h5 class="card-title">Password Generator</h5>
-                        <p class="card-text"> A simple password generator that inputs character length and character type and returns a randomly generated password to the user</p>
-                        <ul class="list-group">
-                            <li class="list-group-item">Technologies Used: HTML, CSS, Javascript</li>
-                            <li class="list-group-item"><a href="https://github.com/rsg71/Password-Generator-Robert-Greenawalt" target="_blank" class="card-link">Github Repo</a></li>
-                        </ul>
-                    </figure>
-                </figure>
-            </section>
-            <section class="col mb-4">
-                <figure class="card">
-                    <a href="https://rsg71.github.io/Code_Quiz-Robert_Greenawalt/" target="_blank"><img
-                            src="imgs/code-quiz.PNG"
-                            class="card-img-top" alt="coming soon image" height="358"></a>
-                    <figure class="card-body">
-                        <h5 class="card-title">Code Quiz</h5>
-                        <p class="card-text" id="code-quiz-p">Test your Javascript knowledge with this short code quiz; save your high scores and try to beat your personal best</p>
-                        <ul class="list-group">
-                            <li class="list-group-item">Technologies Used: HTML, CSS, Bootstrap, Javascript</li>
-                            <li class="list-group-item"><a href="https://github.com/rsg71/Code_Quiz-Robert_Greenawalt" target="_blank" class="card-link">Github Repo</a></li>
-                        </ul>
-                    </figure>
-                </figure>
-            </section>
-            <section class="col mb-4">
-                <figure class="card">
-                    <a href="https://rsg71.github.io/Work-Scheduler/" target="_blank"><img
-                            src="imgs/work-scheduler.PNG"
-                            class="card-img-top card-1" alt="coming soon image" height="358"></a>
-                    <figure class="card-body">
-                        <h5 class="card-title">Work Scheduler</h5>
-                        <p class="card-text">A 9-5 work schedule that changes color dynamically; grey is past, red is the current hour, and green is the future</p>
-                        <ul class="list-group">
-                            <li class="list-group-item">Technologies Used: HTML, CSS, Bootstrap, Javascript</li>
-                            <li class="list-group-item"><a href="https://github.com/rsg71/Work-Scheduler" target="_blank" class="card-link">Github Repo</a></li>
-                        </ul>
-                    </figure>
-                </figure>
-            </section>
-            <section class="col mb-4">
-                <figure class="card">
-                    <a href="https://rsg71.github.io/Weather-App/" target="_blank"><img
-                            src="imgs/weather-app.PNG"
-                            class="card-img-top" alt="coming soon image" height="358"></a>
-                    <figure class="card-body">
-                        <h5 class="card-title">Weather App</h5>
-                        <p class="card-text">Search by city to return a real time weather report; also included is a five day forecast</p>
-                            <ul class="list-group">
-                                <li class="list-group-item">Technologies Used: HTML, CSS, Bootstrap, Javascript</li>
-                                <li class="list-group-item"><a href="https://github.com/rsg71/Weather-App" target="_blank" class="card-link">Github Repo</a></li>
-                            </ul>
-                    </figure>
-                </figure>
-            </section>
-            <section class="col mb-4">
-                <figure class="card">
-                    <a href="https://lambaa94.github.io/Brewery-Finder/" target="_blank"><img
-                            src="imgs/brewery-finder.PNG"
-                            class="card-img-top" alt="coming soon image" height="358"></a>
-                    <figure class="card-body">
-                        <h5 class="card-title">Brewery Finder Project</h5>
-                        <p class="card-text">Search by state and select brewery type to find a list of breweries</p>
-                        <ul class="list-group">
-                            <li class="list-group-item">Technologies Used: HTML, CSS, Foundation, Javascript, 3 API's</li>
-                            <li class="list-group-item"><a href="https://github.com/rsg71/Brewery-Finder" target="_blank" class="card-link">Github Repo</a></li>
-                        </ul>
-                    </figure>
-                </figure>
-            </section>
+      <section class="col mb-4">
+        <figure class="card">
+          <a href="https://rsg71.github.io/Code_Quiz-Robert_Greenawalt/" target="_blank"><img src="imgs/code-quiz.PNG"
+              class="card-img-top" alt="code quiz" height="358"></a>
+          <figure class="card-body">
+            <h5 class="card-title">Code Quiz</h5>
+            <p class="card-text" id="code-quiz-p">Test your Javascript knowledge with this short code quiz; save your
+              high scores and try to beat your personal best</p>
+            <ul class="list-group">
+              <li class="list-group-item">Technologies Used: HTML, CSS, Bootstrap, Javascript</li>
+              <li class="list-group-item"><a href="https://github.com/rsg71/Code_Quiz-Robert_Greenawalt" target="_blank"
+                  class="card-link">Github Repo</a></li>
+            </ul>
+          </figure>
+        </figure>
+      </section>
 
-            
-            <!-- Password Generator -->
-            <!-- <div class="card" style="width: 18rem;"> 
-                <img src="imgs/Password-generator.PNG" class="card-img-top" alt="password generator">
-                <div class="card-body">
-                  <h5 class="card-title">Password Generator</h5>
-                  <p class="card-text">A simple password generator that takes an input for character length and inclusion of various types of characters, and returns a randomly generated password to the user</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Technologies Used: HTML, CSS, Javascript</li>
-                </ul>
-                <div class="card-body">
-                  <a href="https://github.com/rsg71/Password-Generator-Robert-Greenawalt" target="_blank" class="card-link">Github Repo</a>
-                </div>
-              </div> -->
+      <section class="col mb-4">
+        <figure class="card">
+          <a href="https://rsg71.github.io/Work-Scheduler/" target="_blank"><img src="imgs/work-table.jpg"
+              class="card-img-top card-1" alt="work scheduler" height="358"></a>
+          <figure class="card-body">
+            <h5 class="card-title">Work Scheduler</h5>
+            <p class="card-text">A 9-5 work schedule that changes color dynamically; grey is past, red is the current
+              hour, and green is the future</p>
+            <ul class="list-group">
+              <li class="list-group-item">Technologies Used: HTML, CSS, Bootstrap, Javascript</li>
+              <li class="list-group-item"><a href="https://github.com/rsg71/Work-Scheduler" target="_blank"
+                  class="card-link">Github Repo</a></li>
+            </ul>
+          </figure>
+        </figure>
+      </section>
 
-              <!-- Code Quiz -->
-            <!-- <div class="card" style="width: 18rem;">
-                <img src="imgs/code-quiz.PNG" class="card-img-top" alt="code quiz">
-                <div class="card-body">
-                  <h5 class="card-title">Code Quiz</h5>
-                  <p class="card-text">Test your Javascript knowledge with this short code quiz; save your high scores and try to beat your personal best</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Technologies Used: HTML, CSS, Javascript</li>
-                </ul>
-                <div class="card-body">
-                  <a href="https://github.com/rsg71/Code_Quiz-Robert_Greenawalt" target="_blank" class="card-link">Github Repo</a>
-                </div>
-              </div> -->
+      <section class="col mb-4">
+        <figure class="card">
+          <a href="https://rsg71.github.io/Weather-App/" target="_blank"><img src="imgs/weather-app.PNG"
+              class="card-img-top" alt="weather app" height="358"></a>
+          <figure class="card-body">
+            <h5 class="card-title">Weather App</h5>
+            <p class="card-text">Search by city to return a real time weather report; also included is a five day
+              forecast</p>
+            <ul class="list-group">
+              <li class="list-group-item">Technologies Used: HTML, CSS, Bootstrap, Javascript</li>
+              <li class="list-group-item"><a href="https://github.com/rsg71/Weather-App" target="_blank"
+                  class="card-link">Github Repo</a></li>
+            </ul>
+          </figure>
+        </figure>
+      </section>
 
-              <!-- Brewery Finder -->
-            <!-- <div class="card" style="width: 18rem;">
-                <img src="imgs/brewery-finder.PNG" class="card-img-top" alt="brewery finder">
-                <div class="card-body">
-                  <h5 class="card-title">Brewery Finder</h5>
-                  <p class="card-text">Search by state and select brewery type to find a list of breweries</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Technologies Used: HTML, CSS, Javascript, 3 APIs (OpenBreweryDB, Yelp, Google Maps)</li>
-                </ul>
-                <div class="card-body">
-                  <a href="https://github.com/rsg71/Brewery-Finder" target="_blank" class="card-link">Github Repo</a>
-                </div>
-              </div> -->
+      <section class="col mb-4">
+        <figure class="card">
+          <a href="https://lambaa94.github.io/Brewery-Finder/" target="_blank"><img src="imgs/brewery-finder.PNG"
+              class="card-img-top" alt="brewery finder" height="358"></a>
+          <figure class="card-body">
+            <h5 class="card-title">Brewery Finder</h5>
+            <p class="card-text">Search by state and brewery type to find a list of breweries; click on the Google map to show the brewery's location</p>
+            <ul class="list-group">
+              <li class="list-group-item">Technologies Used: HTML, CSS, Foundation, Javascript, 3 API's</li>
+              <li class="list-group-item"><a href="https://github.com/rsg71/Brewery-Finder" target="_blank"
+                  class="card-link">Github Repo</a></li>
+            </ul>
+          </figure>
+        </figure>
+      </section>
 
-              <!-- Weather App -->
-            <!-- <div class="card">
-                <img src="imgs/weather-app.PNG" class="card-img-top" alt="Weather app">
-                <div class="card-body">
-                  <h5 class="card-title">Weather App</h5>
-                  <p class="card-text">Search by city to return a real time weather report; also included is a five day forecast</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Technologies Used: HTML, CSS, Javascript, Bootstrap</li>
-                </ul>
-                <div class="card-body">
-                  <a href="https://github.com/rsg71/Weather-App" target="_blank" class="card-link">Github Repo</a>
-                </div>
-              </div> -->
+      <section class="col mb-4">
+        <figure class="card">
+          <a href="https://github.com/rsg71/Note_Taker" target="_blank"><img src="imgs/note_taker.png"
+              class="card-img-top" alt="note taker image" height="358"></a>
+          <figure class="card-body">
+            <h5 class="card-title">Note Taker</h5>
+            <p class="card-text">Simple note-taker that allows the user to create, add, select, and delete notes. Useful for quick and simple notetaking that requires only a title and a description.</p>
+            <ul class="list-group">
+              <li class="list-group-item">Technologies Used: HTML, CSS, Bootstrap, Javascript, Node.js</li>
+              <li class="list-group-item"><a href="https://github.com/rsg71/Note_Taker" target="_blank"
+                  class="card-link">Github Repo</a></li>
+            </ul>
+          </figure>
+        </figure>
+      </section>
+      
+      <section class="col mb-4">
+        <figure class="card">
+          <a href="https://github.com/rsg71/Employee_Tracker" target="_blank"><img src="imgs/employee_tracker.PNG"
+              class="card-img-top" alt="note taker image" height="358"></a>
+          <figure class="card-body">
+            <h5 class="card-title">Employee Tracker</h5>
+            <p class="card-text">Command line interface that allows users to check a variety of fields and/or edit them. Information is displayed regarding the employees in the company, their role, department, etc. </p>
+            <ul class="list-group">
+              <li class="list-group-item">Technologies Used: Javascript, Node.js</li>
+              <li class="list-group-item"><a href="https://github.com/rsg71/Employee_Tracker" target="_blank"
+                  class="card-link">Github Repo</a></li>
+            </ul>
+          </figure>
+        </figure>
+      </section>
 
-              <!-- Work Scheduler -->
-            <!-- <div class="card" style="width: 18rem;">
-                <img src="imgs/work-scheduler.PNG" class="card-img-top" alt="Work Scheduler">
-                <div class="card-body">
-                  <h5 class="card-title">Work Scheduler</h5>
-                  <p class="card-text">A 9-5 work schedule that changes color dynamically; grey is past, red is the current hour, and green is the future</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Technologies Used: HTML, CSS, Javascript, Bootstrap</li>
-                </ul>
-                <div class="card-body">
-                  <a href="https://github.com/rsg71/Work-Scheduler" target="_blank" class="card-link">Github Repo</a>
-                </div>
-              </div> -->
+     
 
-        </section>
-    </main>
+    </section>
+  </main>
 
-    <!-- Footer-------------------------------------------------------------->
-
-    
-    <footer class="footer footer-portfolio mx-auto">
-      <div class="footer-links">
-        <a href="https://github.com/rsg71" target="_blank">Github<i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/robert-greenawalt-43457a14a/" target="_blank">LinkedIn<i
-            class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/robert.greenawalt29/" target="_blank">Instagram
-          <i class="fab fa-instagram"></i></a>
-      </div>
-</footer>
-    <!-------------------------------------------------- End Footer ----------------------------->
+  <!-- Footer-------------------------------------------------------------->
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+  <footer class="footer footer-portfolio mx-auto">
+    <div class="footer-links">
+      <a href="https://github.com/rsg71" target="_blank">Github<i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/robert-greenawalt-43457a14a/" target="_blank">LinkedIn<i
+          class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/robert.greenawalt29/" target="_blank">Instagram
+        <i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+  <!-------------------------------------------------- End Footer ----------------------------->
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
 
 
 </body>
