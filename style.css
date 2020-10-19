@@ -2,6 +2,7 @@
       position: relative;
       width:100vw;
       background-color: whitesmoke;
+      overflow-x: hidden;
   }
 
 
@@ -51,15 +52,22 @@
     color:white;
 }
 
+
+
+/* ============================================================== */
+
+/* Heashot */
+
+/* ============================================================== */
 #headshot {
-    max-width: 500px;
+    max-width: 100%;
     min-width:30%;
     border:3px solid black;
     border-radius:4px;
-    margin-top:30px;
 }
 .headshot-block {
-    background-color: whit;
+    /* background-color: white; */
+    background-image: url("imgs/david-jorre-vertical.jpg")
 }
 
 #bio {
