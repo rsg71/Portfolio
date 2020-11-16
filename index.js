@@ -18,15 +18,15 @@ app.use(bodyParser.json())
 app.use(express.static(__dirname));
 
 
-app.get("/", (req, res) => {
+app.get("/Portfolio/", (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"));
 })
 
-app.get("/contact", (req, res) => {
+app.get("/Portfolio/contact", (req, res) => {
     res.sendFile(path.join(__dirname, "contact.html"));
 })
 
-app.get("/portfolio", (req, res) => {
+app.get("/Portfolio/portfolio", (req, res) => {
     res.sendFile(path.join(__dirname, "portfolio.html"));
 })
 
