@@ -33,9 +33,10 @@ app.get("/portfolio", (req, res) => {
 app.post("/", (req, res) => {
     // console.log('on the backend')
     console.log(req.body)
+    const firstName = req.body.firstName
+    const lastName = req.body.lastName
     const message = req.body.message
     const clientEmailAddress = req.body.email
-    const name = req.body.name
 
 
     const transporter = nodemailer.createTransport({
@@ -50,7 +51,7 @@ app.post("/", (req, res) => {
         from: clientEmailAddress,
         to: process.env.SECONDARYUSER,
         subject: 'Contact Page Email Notification',
-        html: `<p>Name: ${name}</p>
+        html: `<p>Name: ${firstName} ${lastName}</p>
                <p>Email: ${clientEmailAddress}</p>
                <p>Message: ${message}</p>`
       };
