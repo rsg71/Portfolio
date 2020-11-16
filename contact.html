@@ -5,27 +5,17 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
   <!-- Bootstrap  -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-
-
   <!-- font awesome link for icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-
-
   <!-- Css link for footer-->
   <link rel="stylesheet" href="style.css">
-
   <!-- favicon -->
   <link rel="shortcut icon" type="image/jpg" href="imgs/favicon.png" />
-
   <title>Contact | Robert Greenawalt</title>
-
 </head>
 
 <body>
@@ -42,13 +32,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home/About <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="/portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="/contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -58,44 +48,29 @@
   <!-- End Nav bar -------------------------------------------------------------------------------->
 
 
-
-
-
-
   <main class="container contact">
     <h1 class="mt-3">Contact</h1>
-    <form id="gform" method="POST" data-email="from_email@example.com"
-      action="https://script.google.com/macros/s/AKfycbzeerxpPmY4ZLAK94hsuS0tkBAbqBo_buiy9H3Q_i1FIiIfBLQ/exec">
-      <form class="form-group">
+    <form id="cform" method="POST" data-email="from_email@example.com"
+      action="/">
+      <div class="form-group">
         <label for="exampleFormControlInput1">Name:</label>
         <input id="name" name="name" type="name" class="form-control" class="exampleFormControlInput1"
           placeholder="John Doe">
-      </form>
-      <form class="form-group">
+      </div>
+      <div class="form-group">
         <label for="exampleFormControlInput1">Email address:</label>
         <input id="email" name="email" value="" type="email" class="form-control" class="exampleFormControlInput1"
           placeholder="name@example.com">
-      </form>
+      </div>
 
-      <form class="form-group">
-        <label for="exampleFormControlTextarea1">Inquiry/Questions/Comments:</label>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message:</label>
         <textarea id="message" name="message" class="form-control" class="exampleFormControlTextarea1"
-          placeholder="Message here" rows="8"></textarea>
-      </form>
+          placeholder="Enter message here" rows="7"></textarea>
+      </div>
+    <button id="contact-submit-button" class="btn btn-dark" type="submit" value="Submit">Submit</button>
+
     </form>
-    <button id="contact-submit-button" class="btn btn-dark" type="submit" value="Submit"><a id="contact-submit-link"
-        href="mailto:robert.greenawalt29@gmail.com">Submit</a></button>
-
-    <!-- Customise the Thankyou Message People See when they submit the form: -->
-    <div style="display:none;" id="thankyou_message">
-      <h2>
-        <em>Thanks</em> for contacting us!
-        We will get back to you soon!
-      </h2>
-    </div>
-
-    <script data-cfasync="false" type="text/javascript"
-      src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
 
 
 
@@ -131,6 +106,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+
+   <script type="text/javascript" src="contact.js"></script>
+
+
+
 </body>
 
 </html>

@@ -1,0 +1,29 @@
+{
+  "name": "Responsive-Portfolio_Robert-Greenawalt",
+  "version": "1.0.0",
+  "description": "This website is a personal landing space for my own projects; I have includeded a Home/About page, a Portfolio page, and a Contact page. My bio and personal image can be found in the Home/About section. The portfolio page will continue to grow as I add more projects.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.16",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsg71/Responsive-Portfolio_Robert-Greenawalt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rsg71/Responsive-Portfolio_Robert-Greenawalt/issues"
+  },
+  "homepage": "https://github.com/rsg71/Responsive-Portfolio_Robert-Greenawalt#readme"
+}
