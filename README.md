@@ -6,3 +6,7 @@ This website is a personal landing space for my own projects; I have includeded 
 The nav bar is consistent on all webpages and the links are all responsive. Throughout the website, responsiveness can be seen through the variety of clickable buttons and links; even the images under my portfolio are responsive.
 
 Semantic html was used throughout. 
+
+## Deployed Version: 
+
+https://rsg71.github.io/Portfolio/
