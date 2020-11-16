@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer")
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 //parse application
 app.use(bodyParser.urlencoded({extended: false}))
@@ -18,15 +18,15 @@ app.use(bodyParser.json())
 app.use(express.static(__dirname));
 
 
-app.get("/Portfolio/", (req, res) => {
+app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"));
 })
 
-app.get("/Portfolio/contact", (req, res) => {
+app.get("/contact", (req, res) => {
     res.sendFile(path.join(__dirname, "contact.html"));
 })
 
-app.get("/Portfolio/portfolio", (req, res) => {
+app.get("/portfolio", (req, res) => {
     res.sendFile(path.join(__dirname, "portfolio.html"));
 })
 
