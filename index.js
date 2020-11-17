@@ -35,8 +35,8 @@ app.post("/", (req, res) => {
     console.log(req.body)
     const firstName = req.body.firstName
     const lastName = req.body.lastName
-    const message = req.body.message
     const clientEmailAddress = req.body.email
+    const message = req.body.message
 
 
     const transporter = nodemailer.createTransport({
