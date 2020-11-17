@@ -112,3 +112,10 @@
 #portfolio-btn-link, #resume-btn-link {
     border-radius:30px;
 }
+
+
+
+.technologies {
+    color: black;
+    font-size: 5rem;
+}
