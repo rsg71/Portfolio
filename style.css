@@ -1,133 +1,295 @@
   body {
-      position: relative;
-      width:100vw;
-      background-color: whitesmoke;
-      overflow-x: hidden;
+      background-color: black;
+      font-family: 'Open Sans', sans-serif;
+      /* font-family: 'Roboto Mono', monospace; */
+      color:white;
   }
-
 
   .footer {
       display:flex;
-      justify-content: center;
-      align-items: center;
+      flex-wrap:flex;
+      flex-direction:row-reverse;
+      justify-content: space-evenly;
+      align-items: flex-start;
       position:absolute;
       clear:all;
-      height:15vh;
-      background-color:rgb(20, 20, 20);
-      width:100vw;
+      height:20vh;
+      background-color:rgb(15, 15, 15);
+      width:99vw;
+      font-family: 'Montserrat', sans-serif;
   }
 
-  .footer-links a{
-      text-decoration:none;
-  }
- 
-
-
-  .portfolio {
-      margin-bottom:3vh;
+  .footer .col-xs-4 {
+      /* outline: 1px solid red; */
+      margin-top: 20px
   }
 
+  .footer p {
+      font-size:.8rem;
+      color:lightslategrey;
+  }
 
-.fab {
-    color:rgba(255, 255, 255, 0.651);
-    font-size:2rem;
-    padding:10px;
-}
-
-.fab:hover {
-    color:white;
-}
+  .footer h5 {
+      font-size:.9rem;
+  }
+  .footer a {
+      text-decoration: none;
+      color:lightslategrey;
+  }
+  .footer a:hover {
+      color:whitesmoke;
+  }
+  
 
 .logo {
     width:3rem;
 }
 
 
-.card-img-top:hover {
+/* .card-img-top:hover {
     opacity: 0.6;
+} */
+
+
+
+
+/* ============================================================== */
+
+/* index page */
+
+/* ============================================================== */
+
+.greeting {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-#contact-submit-link {
-    text-decoration:none;
+.intro {
+    color: white;
+}
+
+.introlight {
+    color:rgba(214, 206, 206, 0.74);
+    
+}
+
+.introBox {
+    color:black;
+    background:whitesmoke;
+}
+
+
+
+
+.image {
+    position:relative;
+    /* height: 50vh; */
+    /* border-radius: 10px; */
+}
+
+.image__img {
+    display:block;
+    width:100%;
+
+}
+
+
+.image__overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
     color:white;
-}
-
-
-
-/* ============================================================== */
-
-/* Heashot */
-
-/* ============================================================== */
-#headshot {
-    max-width: 100%;
-    min-width:30%;
-    border:3px solid black;
-    border-radius:4px;
-}
-.headshot-block {
-    /* background-color: white; */
-    background-image: url("imgs/david-jorre-vertical.jpg")
-}
-
-#bio {
-    margin-left:14px;
-    margin-right:10px;
-    margin-bottom:40px;
-    padding-left:20px;
-    padding-right:20px;
-}
-
-#github {
-    display:flex;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    opacity:0;
+    transition: opacity 0.3s;
+}
+/* 
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+} */
+
+
+.image__overlay > * {
+    transform: translateY(15px);
+    transition: transform 0.3s;
+}
+
+
+.image__overlay:hover {
+    opacity:1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.container img {
+    border-radius: 4px;
+}
+
+
+
+
+/* 
+.makeOpaque:hover {
+    opacity:0.8;
+    transition: opacity 0.4s;
+} */
+
+
+/* ============================================================== */
+
+/* Resume */
+
+/* ============================================================== */
+    
+
+.parent {
+    position:relative;
+    background-color: purple;
+}
+.child {
+    background-color: green;
 }
 
 .portfolio-body {
     margin-top: 7vh;
 }
-
+/* 
 .footer-contact {
     bottom:-247px;
-}
+} */
 
-#resume {
+/* #resume {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     border:2px solid black;
-    /* max-width:100vw;
-    max-height:140vh; */
     margin-top: 5vh;
     margin-bottom: 5vh;
-}
+} */
 
+/* 
 #resume-portfolio-buttons {
     max-width:60%;
     margin-left:20%;
-}
+} */
 
-
+/* 
 #portfolio-btn-link, #resume-btn-link {
     border-radius:30px;
+} */
+
+
+
+
+
+/* ============================================================== */
+
+/* Portfolio page */
+
+/* ============================================================== */
+
+.portfolio {
+    margin-bottom:3vh;
+    color:black;
 }
 
 
 
-.technologies {
-    color: black;
-    font-size: 5rem;
+.portfolio img {
+    height: 300px;
+    
 }
 
 
-.devicon {
-    font-size: 5rem;
-    color: black;
+
+img {
+    max-width: 100%;
 }
 
 
-.phoneEmail {
-    /* color: #007BFD; */
-    color: #0A7BFF;
+
+
+
+
+
+/* ============================================================== */
+/* footer */
+/* ============================================================== */
+
+
+
+
+
+
+
+
+/* ============================================================== */
+
+/* media queries */
+
+/* ============================================================== */
+
+@media all and (max-width: 768px) {
+    #restaurantFinder {
+        top:-120px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .devicon {
+        font-size: 2.7rem;
+        /* color:rgba(255, 255, 255, 0.651); */
+        /* color: rgba(110, 34, 197, 0.733) */
+        /* color: rgb(94,53,177); */
+        color: rgb(68,0,153);
+    
+    
+    }
+
+    .devicon-javascript-plain {
+        font-size: 2.3rem;
+    }
+
+    .carousel-inner img {
+        height: 30vh;
+    }
+
+    .card img {
+        height:30vh;
+    }
+
+    .footer {
+        height:30vh;
+    }
+    .footer p {
+        font-size:10px;
+    }
 }
