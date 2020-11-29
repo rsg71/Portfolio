@@ -1,62 +1,79 @@
+  html {
+      position:relative;
+      min-height:100%;
+  }
+  
   body {
       background-color: black;
       font-family: 'Open Sans', sans-serif;
       /* font-family: 'Roboto Mono', monospace; */
       color:white;
+      /* margin-bottom: 190px; */
   }
-
-  .footer {
-      display:flex;
-      flex-wrap:flex;
-      flex-direction:row-reverse;
-      justify-content: space-evenly;
-      align-items: flex-start;
-      position:absolute;
-      clear:all;
-      height:20vh;
-      background-color:rgb(15, 15, 15);
-      width:99vw;
-      font-family: 'Montserrat', sans-serif;
-  }
-
-  .footer .col-xs-4 {
-      /* outline: 1px solid red; */
-      margin-top: 20px
-  }
-
-  .footer p {
-      font-size:.8rem;
-      color:lightslategrey;
-  }
-
-  .footer h5 {
-      font-size:.9rem;
-  }
-  .footer a {
-      text-decoration: none;
-      color:lightslategrey;
-  }
-  .footer a:hover {
-      color:whitesmoke;
-  }
-  
-
-.logo {
-    width:3rem;
+  .fluidFooter {
+    position:absolute;
+    bottom:0;
+    background-color:rgb(20, 20, 20);
+    font-family: 'Montserrat', sans-serif;
 }
 
+.fluidFooter .row {
+    margin-bottom:30px;
+}
 
-/* .card-img-top:hover {
-    opacity: 0.6;
+.fluidFooter{
+    /* outline: 1px solid red; */
+    margin-top: 20px
+}
+
+.fluidFooter p {
+    font-size:.8rem;
+    line-height: 80%;
+}
+
+.fluidFooter h5 {
+    font-size:.9rem;
+    margin-top:20px;
+}
+.fluidFooter a {
+    text-decoration: none;
+    color:lightslategrey;
+}
+.fluidFooter a:hover {
+    color:whitesmoke;
+}
+  
+  /* .footerContact {
+    display:flex;
+    flex-wrap:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    position:absolute;
+    bottom: 0;
+    width:100%;
+    height:220px;
+    background-color:rgb(15, 15, 15);
+  }
+
+  .footerContact .col-xs-4 {
+    margin-top: 20px
+}
+.footerContact p {
+    font-size:.8rem;
+    color:lightslategrey;
+}
+.footerContact h5 {
+    font-size:.9rem;
 } */
 
-
-
+.logo {
+    width:1.4em;
+}
 
 /* ============================================================== */
-
 /* index page */
-
 /* ============================================================== */
 
 .greeting {
@@ -84,8 +101,6 @@
 
 .image {
     position:relative;
-    /* height: 50vh; */
-    /* border-radius: 10px; */
 }
 
 .image__img {
@@ -93,7 +108,6 @@
     width:100%;
 
 }
-
 
 .image__overlay{
     position:absolute;
@@ -111,11 +125,6 @@
     opacity:0;
     transition: opacity 0.3s;
 }
-/* 
-.image__overlay--blur {
-    backdrop-filter: blur(5px);
-} */
-
 
 .image__overlay > * {
     transform: translateY(15px);
@@ -152,92 +161,42 @@
     border-radius: 4px;
 }
 
-
-
-
-/* 
-.makeOpaque:hover {
-    opacity:0.8;
-    transition: opacity 0.4s;
-} */
-
-
 /* ============================================================== */
-
 /* Resume */
-
 /* ============================================================== */
-    
-
-.parent {
-    position:relative;
-    background-color: purple;
-}
-.child {
-    background-color: green;
-}
-
 .portfolio-body {
     margin-top: 7vh;
 }
-/* 
-.footer-contact {
-    bottom:-247px;
-} */
 
-/* #resume {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border:2px solid black;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-} */
 
-/* 
-#resume-portfolio-buttons {
-    max-width:60%;
-    margin-left:20%;
-} */
-
-/* 
-#portfolio-btn-link, #resume-btn-link {
-    border-radius:30px;
-} */
-
+.resume {
+    display:flex;
+    justify-content:center;
+    margin: auto;
+}
 
 
 
 
 /* ============================================================== */
-
 /* Portfolio page */
-
 /* ============================================================== */
-
-.portfolio {
-    margin-bottom:3vh;
-    color:black;
+.jumbotron {
+    border-radius:0 !important;
+    /* background-color:whitesmoke; */
+    background-image: url("imgs/portfolio_background_colors_blue.jpg");
+    width:100%;
+    display:flex;
+    justify-content: center;
+    color:white;
 }
 
-
-
-.portfolio img {
-    height: 300px;
-    
-}
 
 
 
 img {
     max-width: 100%;
 }
-
-
-
-
-
 
 
 /* ============================================================== */
@@ -248,30 +207,45 @@ img {
 
 
 
+/* ============================================================== */
+/* contact */
+/* ============================================================== */
+.contact a{
+    text-decoration: none;
+}
+
+.contact {
+    width:70%;
+}
+
 
 
 
 /* ============================================================== */
-
 /* media queries */
-
 /* ============================================================== */
 
 @media all and (max-width: 768px) {
     #restaurantFinder {
         top:-120px;
     }
+
+    #resumeContainer {
+        max-width: 70% !important;
+    }
 }
 
 @media all and (max-width: 576px) {
+
+    p{
+        color:red !important;
+    }
     .devicon {
         font-size: 2.7rem;
         /* color:rgba(255, 255, 255, 0.651); */
         /* color: rgba(110, 34, 197, 0.733) */
         /* color: rgb(94,53,177); */
         color: rgb(68,0,153);
-    
-    
     }
 
     .devicon-javascript-plain {
@@ -289,7 +263,20 @@ img {
     .footer {
         height:30vh;
     }
+    .footerContact {
+        height:25vh;
+    }
     .footer p {
         font-size:10px;
+    }
+
+
+    #resumeContainer {
+        max-width: 80% !important;
+    }
+
+
+    .contact {
+        width:80%;
     }
 }
