@@ -43,30 +43,7 @@
     color:whitesmoke;
 }
   
-  /* .footerContact {
-    display:flex;
-    flex-wrap:flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    font-family: 'Montserrat', sans-serif;
-    position:absolute;
-    bottom: 0;
-    width:100%;
-    height:220px;
-    background-color:rgb(15, 15, 15);
-  }
 
-  .footerContact .col-xs-4 {
-    margin-top: 20px
-}
-.footerContact p {
-    font-size:.8rem;
-    color:lightslategrey;
-}
-.footerContact h5 {
-    font-size:.9rem;
-} */
 
 .logo {
     width:1.4em;
@@ -214,9 +191,14 @@ img {
     text-decoration: none;
 }
 
+.contact .col {
+    margin-bottom: 40px;
+}
+
+/* 
 .contact {
     width:70%;
-}
+} */
 
 
 
@@ -237,9 +219,7 @@ img {
 
 @media all and (max-width: 576px) {
 
-    p{
-        color:red !important;
-    }
+    
     .devicon {
         font-size: 2.7rem;
         /* color:rgba(255, 255, 255, 0.651); */
@@ -275,8 +255,8 @@ img {
         max-width: 80% !important;
     }
 
-
+/* 
     .contact {
         width:80%;
-    }
+    } */
 }
