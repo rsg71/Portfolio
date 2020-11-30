@@ -7,9 +7,19 @@
       background-color: black;
       font-family: 'Open Sans', sans-serif;
       /* font-family: 'Roboto Mono', monospace; */
+      /* font-family: 'Recursive', sans-serif; */
+
       color:white;
       /* margin-bottom: 190px; */
   }
+
+
+
+.active a {
+    border-bottom: 2px solid red !important ;
+}
+
+
   .fluidFooter {
     position:absolute;
     bottom:0;
@@ -47,6 +57,7 @@
 
 .logo {
     width:1.4em;
+    margin:5px;
 }
 
 /* ============================================================== */
@@ -58,6 +69,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 .intro {
     color: white;
@@ -73,6 +85,20 @@
     background:whitesmoke;
 }
 
+.coreCompetencies {
+    font-size:1.5em;
+}
+
+
+.recursiveFont {
+    font-family: 'Recursive', sans-serif;
+}
+
+
+.restaurantFinder {
+    display:block !important;
+    margin:auto !important;
+}
 
 
 
@@ -145,6 +171,9 @@
     margin-top: 7vh;
 }
 
+.resumeContainer {
+    margin-bottom:50px;
+}
 
 .resume {
     display:flex;
@@ -192,7 +221,7 @@ img {
 }
 
 .contact .col {
-    margin-bottom: 40px;
+    margin-bottom: 5em;
 }
 
 /* 
@@ -208,12 +237,24 @@ img {
 /* ============================================================== */
 
 @media all and (max-width: 768px) {
-    #restaurantFinder {
+    /* #restaurantFinder {
         top:-120px;
+    } */
+
+    
+    .restaurantFinder {
+        /* display: static; */
+        margin: none;
     }
 
     #resumeContainer {
         max-width: 70% !important;
+
+
+    }
+
+    .columnMargin {
+        margin-bottom:1em
     }
 }
 
