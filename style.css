@@ -101,7 +101,7 @@
 }
 
 
-
+/* =============================================== */
 .image {
     position:relative;
 }
@@ -142,6 +142,9 @@
 .image__overlay:hover > * {
     transform: translateY(0);
 }
+/* =============================================== */
+
+
 
 .image__title {
     font-size: 2em;
@@ -151,6 +154,7 @@
 .image__description {
     font-size: 1.25em;
     margin-top: 0.25em;
+    text-align: center;
 }
 
 
@@ -293,7 +297,8 @@ img {
 
 
     #resumeContainer {
-        max-width: 80% !important;
+        width: 100%;
+        max-width: 100% !important;
     }
 
 /* 
