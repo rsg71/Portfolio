@@ -168,6 +168,10 @@
     border-radius: 4px;
 }
 
+
+.columnMargin {
+    margin-bottom:1em
+}
 /* ============================================================== */
 /* Resume */
 /* ============================================================== */
@@ -248,7 +252,7 @@ img {
     
     .restaurantFinder {
         /* display: static; */
-        margin: none;
+        /* margin: none; */
     }
 
     #resumeContainer {
@@ -265,12 +269,8 @@ img {
 @media all and (max-width: 576px) {
 
     
-    .devicon {
-        font-size: 2.7rem;
-        /* color:rgba(255, 255, 255, 0.651); */
-        /* color: rgba(110, 34, 197, 0.733) */
-        /* color: rgb(94,53,177); */
-        color: rgb(68,0,153);
+    #restaurantFinder {
+        margin-bottom: 1.45rem;
     }
 
     .devicon-javascript-plain {
