@@ -70,6 +70,14 @@
     flex-wrap: wrap;
 }
 
+.container {
+    animation-duration: 4s;
+
+}
+
+.projectContainer {
+    animation-duration: 2s;
+}
 
 .intro {
     color: white;
