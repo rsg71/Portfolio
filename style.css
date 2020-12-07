@@ -236,16 +236,18 @@ img {
     text-decoration: none;
 }
 
-.contact .col {
+/* .contact .col {
     margin-bottom: 5em;
-}
+} */
 
 /* 
 .contact {
     width:70%;
 } */
 
-
+#contactToast {
+    z-index: 5000;
+}
 
 
 /* ============================================================== */
@@ -258,20 +260,26 @@ img {
     } */
 
     
-    .restaurantFinder {
+    /* .restaurantFinder { */
         /* display: static; */
         /* margin: none; */
-    }
+    /* } */
 
     #resumeContainer {
         max-width: 70% !important;
-
-
     }
 
+    
     .columnMargin {
         margin-bottom:1em
     }
+}
+
+@media all and (min-width: 768px) {
+    .contactContainer {
+        max-width: 50%;
+    }
+
 }
 
 @media all and (max-width: 576px) {
@@ -303,14 +311,17 @@ img {
         font-size:10px;
     }
 
-
     #resumeContainer {
         width: 100%;
         max-width: 100% !important;
     }
 
-/* 
-    .contact {
-        width:80%;
-    } */
+    .contactContainer {
+        min-height: 675px
+    }
+
+    #contactSubmitBtn, #contactSendingBtn, #contactSubmittedBtn {
+        width: 100%
+    }
+
 }

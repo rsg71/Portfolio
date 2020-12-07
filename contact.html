@@ -19,16 +19,50 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-
-
   <!-- wow.js -->
-  <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.js" ></script>
+  <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.js"></script>
 
   <!-- animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  
+
   <!-- Css link for footer-->
   <link rel="stylesheet" href="style.css">
+
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/integration
+      emailjs.init('user_sw3Id8dB1tRbzmfwsA1sj');
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+
+        $("#contactSubmitBtn").hide();
+        $("#contactSendingBtn").show();
+        // these IDs from the previous steps
+        emailjs.sendForm('service_440806c', 'contact_form', this)
+
+          .then(function () {
+            console.log('SUCCESS!');
+            $(".form-control").val("");
+            $("#contactSendingBtn").hide();
+            $("#contactSubmittedBtn").show();
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
+
+
+
   <title>Contact | Robert Greenawalt</title>
 </head>
 
@@ -62,32 +96,62 @@
   </nav>
 
 
+
   <!-- End Nav bar -------------------------------------------------------------------------------->
 
   <div class="jumbotron">
     <h1 class="display-4">Contact</h1>
   </div>
 
-  <main class="container contact">
 
-    <div class="row" style="text-align:center; margin:5em 0em 20em ">
-      <div class="col">
-        <h2 >Contact me</h2>
-        <h5>Email address:</h5> <a href="mailto:robert.greenawalt29@gmail.com"><i class="fas fa-envelope"></i>
-          robert.greenawalt29@gmail.com</a>
-      </div>
 
-      <div class="col">
-        <h2></i> Located In</h2>
-        <h5><i class="fas fa-map-marker-alt"></i> Philadelphia, PA</h5>
-      </div>
 
+  <main class="container contactContainer">
+    <br>
+
+    <div class="row">
       <div class="col">
-        <h2>Follow Me</h2>
-        <h5><a href="https://github.com/rsg71">Github <i class="fab fa-github"></i></a></h5>
-        <h5><a href="https://www.linkedin.com/in/robert-greenawalt/">LinkedIn <i class="fab fa-linkedin"></i></a></h5>
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="hidden" name="contact_number">
+            <label for="username">Your Name</label>
+            <input name="user_name" type="text" class="form-control" id="username" required>
+          </div>
+          <div class="form-group">
+            <label for="useremail">Your Email</label>
+            <input name="user_email" type="email" class="form-control" id="useremail" placeholder="name@mail.com"
+              required>
+          </div>
+          <div class="form-group">
+            <label for="inputTextarea">Message</label>
+            <textarea name="message" class="form-control" id="usermessage" rows="3" required></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="Personal Portfolio Email" />
+          <input type="hidden" name="_next" value="https://robertgreenawalt.com/contact.html" />
+          <button type="submit" class="btn btn-primary" id="contactSubmitBtn" value="Submit">Submit</button>
+
+          <button class="btn btn-primary" type="button" disabled id="contactSendingBtn" style="display:none">
+            <span class="spinner-border spinner-border-sm" style="margin-bottom:3px" role="status"
+              aria-hidden="true"></span>
+            Sending...
+          </button>
+
+          <button type="submit" class="btn btn-primary" id="contactSubmittedBtn" style="display:none"
+            value="Submit"><i class="fas fa-check-circle"></i> Submitted!</button>
+           
+        </form>
       </div>
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+
   </main>
 
 
@@ -99,7 +163,8 @@
       <div class="col">
         <h5>Account Links</h5>
         <p><a href="https://github.com/rsg71" target="_blank">Github <i class="fab fa-github"></i></a></p>
-        <p><a href="https://www.linkedin.com/in/robert-greenawalt/" target="_blank">LinkedIn <i class="fab fa-linkedin"></i></a></p>
+        <p><a href="https://www.linkedin.com/in/robert-greenawalt/" target="_blank">LinkedIn <i
+              class="fab fa-linkedin"></i></a></p>
       </div>
       <div class="col">
         <h5>Site Navigation</h5>
@@ -116,7 +181,7 @@
   </div>
   <br>
   <br>
- 
+
 
   <!-------------------------------------------------- End Footer ----------------------------->
 
@@ -130,10 +195,10 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
 
-    
-    <script src="js/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
+
+  <script type="text/javascript">
+  </script>
+  
 </body>
+
 </html>
