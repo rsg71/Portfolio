@@ -67,7 +67,7 @@
     <br>
     <div class="row">
       <div class="col-sm-12 greeting">
-        <h1 style="font-size:3.5em; letter-spacing: .05em;">Hello,</h1>
+        <h1 style="font-size:3.5em; letter-spacing: .05em;" id="introHello">Hello,</h1>
         <h1>
           [ <a href="https://github.com/rsg71" class="text-decoration-none" target="_blank"><i
               class="fab fa-github"></i></a> ,
@@ -319,6 +319,16 @@
   <script>
     new WOW().init();
   </script>
+
+  <script type="text/javascript">
+
+
+      $("#introHello").on("click", function(){
+        $("#introHello").addClass("animate__animated animate_pulse")
+
+      })
+  </script>
+
 </body>
 
 </html>
