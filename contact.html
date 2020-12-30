@@ -39,37 +39,6 @@
 
 
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      // https://dashboard.emailjs.com/admin/integration
-      emailjs.init('user_sw3Id8dB1tRbzmfwsA1sj');
-    })();
-  </script>
-  <script type="text/javascript">
-    window.onload = function () {
-      document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        // generate a five digit number for the contact_number variable
-        this.contact_number.value = Math.random() * 100000 | 0;
-
-        $("#contactSubmitBtn").hide();
-        $("#contactSendingBtn").show();
-        // these IDs from the previous steps
-        emailjs.sendForm('service_440806c', 'contact_form', this)
-
-          .then(function () {
-            console.log('SUCCESS!');
-            $(".form-control").val("");
-            $("#contactSendingBtn").hide();
-            $("#contactSubmittedBtn").show();
-          }, function (error) {
-            console.log('FAILED...', error);
-          });
-      });
-    }
-  </script>
-
 
 
   <title>Contact | Robert Greenawalt</title>
@@ -119,36 +88,13 @@
     <br>
 
     <div class="row">
-      <div class="col">
-        <form id="contact-form">
-          <div class="form-group">
-            <input type="hidden" name="contact_number">
-            <label for="username">Your Name</label>
-            <input name="user_name" type="text" class="form-control" id="username" required>
-          </div>
-          <div class="form-group">
-            <label for="useremail">Your Email</label>
-            <input name="user_email" type="email" class="form-control" id="useremail" placeholder="name@mail.com"
-              required>
-          </div>
-          <div class="form-group">
-            <label for="inputTextarea">Message</label>
-            <textarea name="message" class="form-control" id="usermessage" rows="3" required></textarea>
-          </div>
-          <input type="hidden" name="_subject" value="Personal Portfolio Email" />
-          <input type="hidden" name="_next" value="https://robertgreenawalt.com/contact.html" />
-          <button type="submit" class="btn btn-primary" id="contactSubmitBtn" value="Submit">Submit</button>
-
-          <button class="btn btn-primary" type="button" disabled id="contactSendingBtn" style="display:none">
-            <span class="spinner-border spinner-border-sm" style="margin-bottom:3px" role="status"
-              aria-hidden="true"></span>
-            Sending...
-          </button>
-
-          <button type="submit" class="btn btn-primary" id="contactSubmittedBtn" style="display:none"
-            value="Submit"><i class="fas fa-check-circle"></i> Submitted!</button>
-           
-        </form>
+      <div class="col-md">
+        <h1><i class="far fa-envelope"></i>  Email:</h1>
+        <a href="mailto:robert.greenawalt29@gmail.com">robert.greenawalt29@gmail.com</a>
+      </div>
+      <div class="col-md">
+        <h1><i class="fas fa-phone-alt"></i> Phone: </h1>
+        <a href="tel:2159137231"> 215 . 913 . 7231</a>
       </div>
     </div>
     <br />

@@ -6,11 +6,8 @@
   body {
       background-color: black;
       font-family: 'Open Sans', sans-serif;
-      /* font-family: 'Roboto Mono', monospace; */
-      /* font-family: 'Recursive', sans-serif; */
 
       color:white;
-      /* margin-bottom: 190px; */
   }
 
 .animate__fadeIn {
@@ -36,7 +33,6 @@
 }
 
 .fluidFooter{
-    /* outline: 1px solid red; */
     margin-top: 20px
 }
 
@@ -236,22 +232,30 @@ img {
 /* ============================================================== */
 /* contact */
 /* ============================================================== */
+.contactContainer {
+    text-align: center;
+}
+
+.contactContainer .col {
+    font-size: 1.4rem;
+}
+
+.fa-phone-alt{
+    font-size: 2.1rem;
+}
+.col-md {
+    margin-bottom: 3rem;
+}
+
 .contact a{
     text-decoration: none;
 }
 
-/* .contact .col {
-    margin-bottom: 5em;
-} */
 
 /* 
-.contact {
-    width:70%;
-} */
-
 #contactToast {
     z-index: 5000;
-}
+} */
 
 
 
@@ -261,15 +265,6 @@ img {
 /* ============================================================== */
 
 @media all and (max-width: 768px) {
-    /* #restaurantFinder {
-        top:-120px;
-    } */
-
-    
-    /* .restaurantFinder { */
-        /* display: static; */
-        /* margin: none; */
-    /* } */
 
     #resumeContainer {
         max-width: 70% !important;
@@ -282,9 +277,9 @@ img {
 }
 
 @media all and (min-width: 768px) {
-    .contactContainer {
+    /* .contactContainer {
         max-width: 50%;
-    }
+    } */
 
 }
 
