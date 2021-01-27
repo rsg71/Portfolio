@@ -5,8 +5,10 @@
   
   body {
       background-color: black;
-      font-family: 'Open Sans', sans-serif;
-
+      
+      /* font-family: 'Roboto', sans-serif; */
+      /* font-family: 'Recursive', sans-serif; */
+      font-family: 'Work Sans', sans-serif;
       color:white;
   }
 
@@ -21,7 +23,7 @@
 }
 
 
-  .fluidFooter {
+.fluidFooter {
     position:absolute;
     bottom:0;
     background-color:rgb(20, 20, 20);
@@ -64,6 +66,11 @@
 /* index page */
 /* ============================================================== */
 
+#introHello {
+    font-family: 'Bungee Shade', cursive;
+
+}
+
 .greeting {
     display: flex;
     justify-content: space-between;
@@ -77,6 +84,7 @@
 
 .projectContainer {
     animation-duration: 2s;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .intro {
@@ -85,6 +93,7 @@
 
 .introlight {
     color:rgba(214, 206, 206, 0.74);
+    /* color:white */
     
 }
 
@@ -99,7 +108,7 @@
 
 
 .recursiveFont {
-    font-family: 'Recursive', sans-serif;
+    /* font-family: 'Recursive', sans-serif; */
 }
 
 
@@ -183,9 +192,9 @@
 /* ============================================================== */
 /* Resume */
 /* ============================================================== */
-.portfolio-body {
+/* .portfolio-body {
     margin-top: 7vh;
-}
+} */
 
 .resumeContainer {
     margin-bottom:50px;
@@ -211,6 +220,8 @@
     display:flex;
     justify-content: center;
     color:white;
+    font-family: 'Bungee Shade', cursive;
+    
 }
 
 
@@ -224,7 +235,15 @@ img {
 /* ============================================================== */
 /* footer */
 /* ============================================================== */
+.fluidFooter h5{
+    font-family: 'Work Sans', sans-serif;
+    font-size:1.2rem;
+    padding-bottom:10px
+}
 
+.fluidFooter p {
+    font-size:.93rem;
+}
 
 
 
@@ -232,9 +251,9 @@ img {
 /* ============================================================== */
 /* contact */
 /* ============================================================== */
-.contactContainer {
+/* .contactContainer {
     text-align: center;
-}
+} */
 
 .contactContainer .col {
     font-size: 1.4rem;
@@ -251,6 +270,12 @@ img {
     text-decoration: none;
 }
 
+.contactEmailPhone {
+    margin-bottom:30px
+}
+.contactEmailPhone a {
+    font-size: 1.2rem;
+}
 
 /* 
 #contactToast {
@@ -285,6 +310,9 @@ img {
 
 @media all and (max-width: 576px) {
 
+    .jumbotron h1{
+        font-size: 3rem;
+    }
     
     #restaurantFinder {
         margin-bottom: 1.45rem;
@@ -312,6 +340,10 @@ img {
         font-size:10px;
     }
 
+    .fluidFooter h5 {
+        padding-bottom:6px;
+    }
+
     #resumeContainer {
         width: 100%;
         max-width: 100% !important;
@@ -322,7 +354,9 @@ img {
     }
 
     #contactSubmitBtn, #contactSendingBtn, #contactSubmittedBtn {
-        width: 100%
+        width: 100%;
+        margin-bottom:30%;
+        
     }
 
 }
