@@ -2,6 +2,10 @@
       position:relative;
       min-height:100%;
   }
+
+  .myContainer {
+      width:80% !important;
+  }
   
   body {
       background-color: black;
@@ -309,6 +313,10 @@ img {
 }
 
 @media all and (max-width: 576px) {
+
+    .myContainer {
+        width:85% !important;
+    }
 
     .jumbotron h1{
         font-size: 3rem;
